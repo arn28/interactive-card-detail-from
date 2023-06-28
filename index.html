@@ -1,96 +1,112 @@
 <!DOCTYPE html>
 <html lang="en">
-<head>
-  <meta charset="UTF-8">
-  <meta name="viewport" content="width=device-width, initial-scale=1.0"> <!-- displays site properly based on user's device -->
-  <link rel="preconnect" href="https://fonts.googleapis.com">
-  <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
-  <link href="https://fonts.googleapis.com/css2?family=Space+Grotesk:wght@500&display=swap" rel="stylesheet">
-  <link rel="icon" type="image/png" sizes="32x32" href="./images/favicon-32x32.png">
-  <link rel="stylesheet" href="css/style.css">  
-  <title>Frontend Mentor | Interactive card details form</title>
-
-</head>
-<body>
-
-  <section class="card-detail">
-    <div class="card-detail_container">
-
-      <div class="cards">
-        <div>
-          <div class="back-card">
-            <p id="cvc">000</p>
-          </div>
-  
-          <div class="front-card">
-            <img class="logo-card" src="images/card-logo.svg" alt="">
-            <p id="card-number">0000 0000 0000 0000</p>
-            <div>
-              <p id="card-holder">Jane Appleseed</p>
-              <!-- <p id="card-date">00/00</p> -->
-              <p><span id="card-month">00</span>/<span id="card-year">00</span></p>
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <!-- displays site properly based on user's device -->
+    <link rel="preconnect" href="https://fonts.googleapis.com" />
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin />
+    <link
+      href="https://fonts.googleapis.com/css2?family=Space+Grotesk:wght@500&display=swap"
+      rel="stylesheet"
+    />
+    <link rel="icon" type="image/png" sizes="32x32" href="./images/favicon-32x32.png" />
+    <link rel="stylesheet" href="css/style.css" />
+    <title>Frontend Mentor | Interactive card details form</title>
+    <script type="module" defer src="./js/main.js"></script>
+  </head>
+  <body>
+    <section class="card-detail">
+      <div class="card-detail_container">
+        <div class="cards">
+          <div>
+            <div class="back-card">
+              <p id="cvc">000</p>
             </div>
-          </div>
 
-        </div>
-
-      </div>
-
-      <div class="state_container">
-
-        <!-- state start -->
-        <div class="state-start">
-          <form action="" class="card-form" name="cardForm">
-
-            <div class="input-group">
-              <label for="name">Cardholder Name</label>
-              <input type="text" name="cardholderName" id="name" placeholder="e.g. Jane Appleseed" maxLength="40">
-              <!-- <p class="errorMessage">Can't be blank</p> -->
-            </div>
-  
-            <div class="input-group">
-              <label for="card">Card Number</label>
-              <input type="text" name="cardNumber" id="card" placeholder="e.g. 1234 5678 9123 0000" maxLength="19">
-              <!-- <p class="errorMessage">Wrong format, numbers only</p> -->
-            </div>
-  
-            <div>
-              <div class="input-group">
-                <label for="date-card">Exp. Date (MM/YY)</label>
-                <input type="text" name="expMonth" id="date-card" placeholder="MM" maxLength="2">
-                <input type="text" name="expYear" id="date-card" placeholder="YY" maxLength="2">
-                <!-- <p class="errorMessage">Can't be blank</p> -->
-              </div>
-    
-              <div class="input-group">
-                <label for="cvc">CVC</label>
-                <input type="text" name="cvc" id="cvc" placeholder="e.g. 123" maxLength="3">
-                <!-- <p class="errorMessage">Can't be blank</p> -->
+            <div class="front-card">
+              <img class="logo-card" src="images/card-logo.svg" alt="" />
+              <p id="card-number">0000 0000 0000 0000</p>
+              <div>
+                <p id="card-holder">Jane Appleseed</p>
+                <!-- <p id="card-date">00/00</p> -->
+                <p><span id="card-month">00</span>/<span id="card-year">00</span></p>
               </div>
             </div>
-            <input name="submit" type="submit" value="Confirm">
-          </form>          
+          </div>
         </div>
-        <!-- Completed state start -->
 
-        <!-- thank you state -->
-        <div class="thank-you-state">
-          <img src="images/icon-complete.svg" alt="">
-          <p>Thank you!</p>
-          <p>We've added your card details</p>
-          <button id="continue">Continue</button>
+        <div class="state_container">
+          <!-- state start -->
+          <div class="state-start">
+            <form action="" class="card-form" name="cardForm">
+              <div class="input-group">
+                <label for="name">Cardholder Name</label>
+                <input
+                  type="text"
+                  name="cardholderName"
+                  id="name"
+                  placeholder="e.g. Jane Appleseed"
+                  maxlength="40"
+                />
+                <!-- <p class="errorMessage">Can't be blank</p> -->
+              </div>
+
+              <div class="input-group">
+                <label for="card">Card Number</label>
+                <input
+                  type="text"
+                  name="cardNumber"
+                  id="card"
+                  placeholder="e.g. 1234 5678 9123 0000"
+                  maxlength="19"
+                />
+                <!-- <p class="errorMessage">Wrong format, numbers only</p> -->
+              </div>
+
+              <div>
+                <div class="input-group">
+                  <label for="date-card">Exp. Date (MM/YY)</label>
+                  <input
+                    type="text"
+                    name="expMonth"
+                    id="date-card"
+                    placeholder="MM"
+                    maxlength="2"
+                  />
+                  <input type="text" name="expYear" id="date-card" placeholder="YY" maxlength="2" />
+                  <!-- <p class="errorMessage">Can't be blank</p> -->
+                </div>
+
+                <div class="input-group">
+                  <label for="cvc">CVC</label>
+                  <input type="text" name="cvc" id="cvc" placeholder="e.g. 123" maxlength="3" />
+                  <!-- <p class="errorMessage">Can't be blank</p> -->
+                </div>
+              </div>
+              <input name="submit" type="submit" value="Confirm" />
+            </form>
+          </div>
+          <!-- Completed state start -->
+
+          <!-- thank you state -->
+          <div class="thank-you-state">
+            <img src="images/icon-complete.svg" alt="" />
+            <p>Thank you!</p>
+            <p>We've added your card details</p>
+            <button id="continue">Continue</button>
+          </div>
+          <!-- Completed thank you state -->
         </div>
-        <!-- Completed thank you state -->
-
       </div>
 
-    </div>
-
-    <div class="attribution">
-      Challenge by <a href="https://www.frontendmentor.io?ref=challenge" target="_blank">Frontend Mentor</a>. 
-      Coded by <a href="https://www.frontendmentor.io/profile/arn28" target="_blank">Arnold Balabarca</a>.
-    </div>
-  </section>
-</body>
-<script src="./js/formValidation.js"></script>
+      <div class="attribution">
+        Challenge by
+        <a href="https://www.frontendmentor.io?ref=challenge" target="_blank">Frontend Mentor</a>.
+        Coded by
+        <a href="https://www.frontendmentor.io/profile/arn28" target="_blank">Arnold Balabarca</a>.
+      </div>
+    </section>
+  </body>
+  <!-- <script src="./js/formValidation.js"></script> -->
 </html>
