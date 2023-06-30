@@ -49,7 +49,7 @@
                   placeholder="e.g. Jane Appleseed"
                   maxlength="40"
                 />
-                <!-- <p class="errorMessage">Can't be blank</p> -->
+                <p class="errorMessage"></p>
               </div>
 
               <div class="input-group">
@@ -61,7 +61,7 @@
                   placeholder="e.g. 1234 5678 9123 0000"
                   maxlength="19"
                 />
-                <!-- <p class="errorMessage">Wrong format, numbers only</p> -->
+                <p class="errorMessage"></p>
               </div>
 
               <div>
@@ -75,13 +75,13 @@
                     maxlength="2"
                   />
                   <input type="text" name="expYear" id="date-card" placeholder="YY" maxlength="2" />
-                  <!-- <p class="errorMessage">Can't be blank</p> -->
+                  <p class="errorMessage"></p>
                 </div>
 
                 <div class="input-group">
                   <label for="cvc">CVC</label>
                   <input type="text" name="cvc" id="cvc" placeholder="e.g. 123" maxlength="3" />
-                  <!-- <p class="errorMessage">Can't be blank</p> -->
+                  <p class="errorMessage"></p>
                 </div>
               </div>
               <input name="submit" type="submit" value="Confirm" />
@@ -90,7 +90,7 @@
           <!-- Completed state start -->
 
           <!-- thank you state -->
-          <div class="thank-you-state">
+          <div class="thank-you-state hidden">
             <img src="images/icon-complete.svg" alt="" />
             <p>Thank you!</p>
             <p>We've added your card details</p>
@@ -108,5 +108,4 @@
       </div>
     </section>
   </body>
-  <!-- <script src="./js/formValidation.js"></script> -->
 </html>
