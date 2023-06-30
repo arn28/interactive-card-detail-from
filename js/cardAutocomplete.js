@@ -1,26 +1,25 @@
+export const inputAutocompletion = ({ value, inputId, defaultValue }) => {
+  const inputView = document.getElementById(inputId)
+  inputView.textContent = value == '' ? defaultValue : value
+}
 export const nameAutocompletion = (value) => {
-  const cardholderNameView = document.getElementById('card-holder')
-  cardholderNameView.textContent = value == '' ? 'JANE APPLESEED' : value
+  inputAutocompletion({ value, inputId: 'card-holder', defaultValue: 'JANE APPLESEED' })
 }
 
 export const cardNumberAutocompletion = (value) => {
-  const cardNumberView = document.getElementById('card-number')
-  cardNumberView.textContent = value == '' ? '0000 0000 0000 0000' : value
+  inputAutocompletion({ value, inputId: 'card-number', defaultValue: '0000 0000 0000 0000' })
 }
 
 export const yearAutocompletion = (value) => {
-  const yearView = document.getElementById('card-year')
-  yearView.textContent = value == '' ? '00' : value
+  inputAutocompletion({ value, inputId: 'card-year', defaultValue: '00' })
 }
 
 export const monthAutocompletion = (value) => {
-  const monthView = document.getElementById('card-month')
-  monthView.textContent = value == '' ? '00' : value
+  inputAutocompletion({ value, inputId: 'card-month', defaultValue: '00' })
 }
 
 export const cvcAutocompletion = (value) => {
-  const cvcView = document.getElementById('cvc')
-  cvcView.textContent = value == '' ? '000' : value
+  inputAutocompletion({ value, inputId: 'cvc', defaultValue: '000' })
 }
 
 export const toggleErrorMessage = (input, isValid, errorMessage) => {
