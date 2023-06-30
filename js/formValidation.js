@@ -1,7 +1,5 @@
 import { toggleErrorMessage } from './cardAutocomplete.js'
 
-export const isEmpty = (value) => value === ''
-
 export const hasValue = (value) => value !== ''
 
 export const isLenghtCorrect = (value, length) => value.length === length

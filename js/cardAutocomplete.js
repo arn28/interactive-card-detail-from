@@ -36,7 +36,6 @@ export const toggleErrorMessage = (input, isValid, errorMessage) => {
 
 export const hiddeCartDetails = () => {
   const cardDetailSection = document.getElementsByClassName('state-start')[0]
-  console.log(cardDetailSection)
   cardDetailSection.classList.add('hidden')
 }
 
